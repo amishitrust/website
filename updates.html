@@ -1,89 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amishi Trust – Updates & News</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>body { font-family: 'Poppins', sans-serif; background-color: #fffefc; }</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amishi Trust – Updates & News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #fffefc; }
+        .nav-open { overflow: hidden; }
+    </style>
 </head>
-<body class="text-blue-900">
+<body class="text-blue-900 bg-[#fffefc]">
+    <div class="px-4 sm:px-8 md:px-20 lg:px-40">
+        <!-- Navbar -->
+        <header class="py-6 sticky top-0 bg-[#fffefc] z-10">
+            <div class="container mx-auto px-2 sm:px-6 md:px-10 flex justify-between items-center">
+                <h1 class="text-2xl font-semibold hover:text-blue-600">Amishi Trust</h1>
+                <!-- Hamburger -->
+                <button id="nav-toggle" class="md:hidden flex items-center px-3 py-2 rounded text-blue-900 hover:text-blue-600 focus:outline-none" aria-label="Open navigation">
+                    <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-4 lg:space-x-8 text-sm font-medium items-center">
+                    <a href="/" class="hover:text-blue-600">Home</a>
+                    <a href="./initiatives.html" class="">Initiatives</a>
+                    <a href="./impact.html" class="hover:text-blue-600">Impact</a>
+                    <a href="./volunteer.html" class="hover:text-blue-600">Volunteer/Intern</a>
+                    <a href="./updates.html" class="text-blue-600 font-semibold">Updates</a>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-2xl font-semibold shadow transition-transform hover:scale-105">
+                        Contribute →
+                    </button>
+                </nav>
+                <!-- Mobile Nav -->
+                <div id="mobile-nav" class="fixed inset-0 bg-[#fffefc] bg-opacity-95 z-50 flex flex-col items-center justify-center space-y-8 text-lg font-medium transition-all duration-300 transform translate-x-full md:hidden">
+                    <button id="nav-close" class="absolute top-6 right-6 text-3xl text-blue-900 hover:text-blue-600" aria-label="Close navigation">&times;</button>
+                    <a href="/" class="hover:text-blue-600" onclick="closeNav()">Home</a>
+                    <a href="./initiatives.html" class="" onclick="closeNav()">Initiatives</a>
+                    <a href="./impact.html" class="hover:text-blue-600" onclick="closeNav()">Impact</a>
+                    <a href="./volunteer.html" class="hover:text-blue-600" onclick="closeNav()">Volunteer/Intern</a>
+                    <a href="./updates.html" class="text-blue-600 font-semibold" onclick="closeNav()">Updates</a>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-2xl font-semibold shadow transition-transform hover:scale-105">
+                        Contribute →
+                    </button>
+                </div>
+            </div>
+        </header>
 
-  <div class="px-40">
-    <!-- Navbar -->
-    <header class="py-6 sticky top-0 bg-[#fffefc] z-10">
-      <div class="flex justify-between items-center px-10">
-        <h1 class="text-2xl font-semibold hover:text-blue-600">Amishi Trust</h1>
-        <nav class="space-x-8 text-sm font-medium">
-          <a href="/" class="hover:text-blue-600">Home</a>
-          <a href="./initiatives.html" class="">Initiatives</a>
-          <a href="./impact.html" class="hover:text-blue-600">Impact</a>
-          <a href="./volunteer.html" class="hover:text-blue-600">Volunteer/Intern</a>
-          <a href="./updates.html" class="text-blue-600 font-semibold">Updates</a>
-          <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-2xl font-semibold shadow transition-transform hover:scale-105">
-            Contribute →
-          </button>
-        </nav>
-      </div>
-    </header>
+        <!-- Hero -->
+        <section class="h-[50vh] sm:h-[60vh] md:h-[60vh] flex items-center justify-center text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-6xl font-semibold max-w-4xl mx-auto leading-snug">
+                Latest Updates & Success Stories
+            </h2>
+        </section>
 
-    <!-- Hero -->
-    <section class="h-[60vh] flex items-center justify-center text-center">
-      <h2 class="text-5xl md:text-6xl font-semibold max-w-4xl mx-auto leading-snug">
-        Latest Updates & Success Stories
-      </h2>
-    </section>
+        <!-- Updates Grid -->
+        <section class="py-16 sm:py-20 md:py-24 px-2 sm:px-4 md:px-10">
+            <div class="max-w-6xl mx-auto">
+                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-8 sm:mb-10 md:mb-12">What’s New</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+                    <!-- Card 1 -->
+                    <article class="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col items-center">
+                        <img src="https://img.icons8.com/color/96/check-all.png" alt="Completed" class="mb-4">
+                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">Flood Relief Mission Nagar</h4>
+                        <p class="text-gray-700 text-center mb-4">
+                            Distributed 5,000+ ration kits to families in Seawoods—supporting over 25 villages.
+                        </p>
+                        <span class="text-sm text-gray-500">June 2025</span>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col items-center">
+                        <img src="https://img.icons8.com/color/96/handshake.png" alt="Partnership" class="mb-4">
+                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">Partnership with XYZ Foundation</h4>
+                        <p class="text-gray-700 text-center mb-4">
+                            Joined hands to extend skill training programs to women artisans across Thane.
+                        </p>
+                        <span class="text-sm text-gray-500">May 2025</span>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="bg-white rounded-2xl shadow-lg p-6 md:p-8 flex flex-col items-center">
+                        <img src="https://img.icons8.com/color/96/calendar.png" alt="Upcoming" class="mb-4">
+                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">Upcoming: Youth Startup Bootcamp</h4>
+                        <p class="text-gray-700 text-center mb-4">
+                            A 5‑day workshop empowering youth to launch community-driven ventures in July 2025.
+                        </p>
+                        <span class="text-sm text-gray-500">July 2025</span>
+                    </article>
+                </div>
+                <!-- CTA -->
+                <div class="flex justify-center mt-10 sm:mt-12 md:mt-16">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-medium transition">
+                        Subscribe for Updates →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <!-- Updates Grid -->
-    <section class="py-24 px-10">
-      <div class="max-w-6xl mx-auto">
-        <h3 class="text-4xl font-semibold text-center mb-12">What’s New</h3>
-        <div class="grid md:grid-cols-3 gap-10">
-          <!-- Card 1 -->
-          <article class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
-            <img src="https://img.icons8.com/color/96/check-all.png" alt="Completed" class="mb-4">
-            <h4 class="text-xl font-semibold mb-2 text-blue-700">Flood Relief Mission Nagar</h4>
-            <p class="text-gray-700 text-center mb-4">
-              Distributed 5,000+ ration kits to families in Seawoods—supporting over 25 villages.
-            </p>
-            <span class="text-sm text-gray-500">June 2025</span>
-          </article>
+    <!-- Footer -->
+    <footer class="py-8 sm:py-10 text-center text-xs sm:text-sm text-gray-600 bg-white">
+        © 2025 Amishi Trust. All rights reserved.
+    </footer>
 
-          <!-- Card 2 -->
-          <article class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
-            <img src="https://img.icons8.com/color/96/handshake.png" alt="Partnership" class="mb-4">
-            <h4 class="text-xl font-semibold mb-2 text-blue-700">Partnership with XYZ Foundation</h4>
-            <p class="text-gray-700 text-center mb-4">
-              Joined hands to extend skill training programs to women artisans across Thane.
-            </p>
-            <span class="text-sm text-gray-500">May 2025</span>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
-            <img src="https://img.icons8.com/color/96/calendar.png" alt="Upcoming" class="mb-4">
-            <h4 class="text-xl font-semibold mb-2 text-blue-700">Upcoming: Youth Startup Bootcamp</h4>
-            <p class="text-gray-700 text-center mb-4">
-              A 5‑day workshop empowering youth to launch community-driven ventures in July 2025.
-            </p>
-            <span class="text-sm text-gray-500">July 2025</span>
-          </article>
-        </div>
-
-        <!-- CTA -->
-        <div class="flex justify-center mt-16">
-          <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-medium transition">
-            Subscribe for Updates →
-          </a>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Footer -->
-  <footer class="py-10 text-center text-sm text-gray-600 bg-white">
-    © 2025 Amishi Trust. All rights reserved.
-  </footer>
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const navClose = document.getElementById('nav-close');
+        function openNav() {
+            mobileNav.classList.remove('translate-x-full');
+            document.body.classList.add('nav-open');
+        }
+        function closeNav() {
+            mobileNav.classList.add('translate-x-full');
+            document.body.classList.remove('nav-open');
+        }
+        navToggle.addEventListener('click', openNav);
+        navClose.addEventListener('click', closeNav);
+        // Close nav on link click (for anchor links)
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeNav);
+        });
+        // Close nav on outside click
+        mobileNav.addEventListener('click', function(e) {
+            if (e.target === mobileNav) closeNav();
+        });
+    </script>
 </body>
 </html>
