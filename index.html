@@ -19,9 +19,9 @@
 
     <div class="px-4 sm:px-8 md:px-20 lg:px-40">
         <!-- Navbar -->
-        <header class="py-6 sticky top-0 z-10 bg-[#fffefc]">
+        <header class="py-6 bg-[#fffefc]">
             <div class="container mx-auto px-2 sm:px-6 md:px-10 flex justify-between items-center">
-                <img src="./images/logo.jpeg" class="h-[80px]" alt="AMISHI TRUST" />
+                <img src="./images/logo.jpeg" class="h-[100px]" alt="AMISHI TRUST" />
                 <!-- Hamburger Button (Mobile) -->
                 <button id="nav-toggle" class="md:hidden block text-blue-700 focus:outline-none"
                     aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
                 <nav id="nav-menu"
                     class="hidden md:flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 space-x-0 md:space-x-8 text-xs sm:text-sm font-medium absolute md:static top-20 left-0 w-full md:w-auto bg-[#fffefc] md:bg-transparent shadow md:shadow-none px-4 md:px-0 py-4 md:py-0 z-20">
                     <a href="#about" class="hover:text-blue-600 transition block md:inline">About</a>
-                    <a href="#initiatives" class="hover:text-blue-600 transition block md:inline">Initiatives</a>
+                    <a href="#scope" class="hover:text-blue-600 transition block md:inline">Scope of work</a>
                     <a href="#impact" class="hover:text-blue-600 transition block md:inline">Impact</a>
                     <a href="#volunteer" class="hover:text-blue-600 transition block md:inline">Volunteer/Intern</a>
                     <a href="#updates" class="hover:text-blue-600 transition block md:inline">Updates</a>
@@ -61,112 +61,169 @@
         </header>
 
         <!-- Hero -->
-        <section class="h-[60vh] sm:h-[70vh] md:h-[90vh] flex items-center justify-center text-center">
+        <div class="h-[60vh] sm:h-[70vh] md:h-[90vh] flex items-center justify-center text-center">
             <div class="px-2 sm:px-6 md:px-10">
                 <h2 class="text-3xl sm:text-4xl md:text-6xl font-semibold max-w-3xl mx-auto leading-snug">
                     We Empower Lives Through Compassion and Action
                 </h2>
             </div>
-        </section>
+        </div>
 
-        <!-- About -->
+        <!-- About Section -->
         <section id="about"
-            class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10 flex flex-col md:flex-row gap-8 md:gap-12">
+            class="flex flex-col-reverse md:flex-row gap-8 items-stretch justify-between mb-12 px-4 md:px-8 md:h-[500px]">
+
+            <!-- Text Content -->
             <div
-                class="h-60 sm:h-80 md:h-[45vh] w-full md:w-[40%] text-center rounded-3xl bg-blue-600 text-white p-6 md:p-10 flex items-center">
-                <div>
-                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 md:mb-6">About Us</h3>
-                    <p class="text-base sm:text-lg leading-relaxed">
-                        We are a grassroots non-profit committed to creating meaningful change in underserved
-                        communities through sustainable development, education, and humanitarian action.
-                    </p>
-                </div>
+                class="w-full md:w-2/5 border-black border-2 rounded-3xl p-6 bg-blue-200 flex flex-col justify-center h-full">
+                <h3 class="text-2xl md:text-3xl font-semibold mb-4">Our Mission</h3>
+                <p class="text-sm md:text-base leading-relaxed">
+                    Our mission is to revolutionize the societal landscape by harnessing the collective skills and
+                    strengths of individuals from diverse backgrounds, fostering inclusive education and empowerment.
+                </p>
             </div>
-            <div class="h-60 sm:h-80 md:h-[45vh] w-full md:w-[60%] flex justify-center items-center">
-                <img src="./images/1714547249317.jpeg" alt="About Image" class="rounded-xl shadow-md" />
+
+            <!-- Image -->
+            <div class="w-full md:w-3/5 h-full">
+                <img src="./images/1718019586390.jpeg" alt="About Image"
+                    class="rounded-3xl border-2 border-black w-full h-full object-cover" />
             </div>
         </section>
 
-        <!-- Initiatives -->
-        <section id="initiatives" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10">
-            <div class="max-w-6xl mx-auto">
-                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-8 md:mb-12">Our Initiatives
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-                    <!-- Financial Literacy Training -->
-                    <div class="bg-white rounded-2xl shadow p-6 md:p-8 flex flex-col items-center">
-                        <img src="https://img.icons8.com/color/96/money-bag.png" alt="Financial Literacy"
-                            class="mb-4 rounded-xl">
-                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">Financial Literacy Training</h4>
-                        <p class="text-gray-700 mb-4 text-center text-sm md:text-base">
-                            Empowering girl children, women, youth, and artisans with essential financial knowledge and
-                            skills for a secure future.
-                        </p>
+
+
+
+        <!-- Initiatives Section -->
+        <section id="scope" class="mt-12 mb-10 px-4 md:px-8">
+            <h3 class="text-3xl md:text-4xl font-bold text-center md:text-left">Scope of work</h3>
+
+            <div class="flex flex-col gap-10 mt-10">
+                <!-- Initiative Cards -->
+                <!-- Card -->
+                <div class="bg-white flex flex-col md:flex-row gap-6 min-h-[400px]">
+                    <div
+                        class="w-full md:w-1/2 border-2 border-black rounded-3xl p-6 bg-blue-200 flex justify-center flex-col">
+                        <h4 class="text-2xl font-bold text-blue-700">Financial Literacy</h4>
                     </div>
-                    <!-- Startup & Social Entrepreneurship Incubation -->
-                    <div class="bg-white rounded-2xl shadow p-6 md:p-8 flex flex-col items-center">
-                        <img src="https://img.icons8.com/color/96/idea-sharing.png" alt="Startup Incubation"
-                            class="mb-4 rounded-xl">
-                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-center text-blue-700">Startup & Social
-                            Entrepreneurship
-                            Incubation
-                        </h4>
-                        <p class="text-gray-700 mb-4 text-center text-sm md:text-base">
-                            Supporting and mentoring vibrant startups and social projects through simulated training and
-                            coaching sessions.
-                        </p>
-                    </div>
-                    <!-- Skill Development & Training -->
-                    <div class="bg-white rounded-2xl shadow p-6 md:p-8 flex flex-col items-center">
-                        <img src="https://img.icons8.com/color/96/classroom.png" alt="Skill Development"
-                            class="mb-4 rounded-xl">
-                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-center text-blue-700">Skill Development & Training
-                        </h4>
-                        <p class="text-gray-700 mb-4 text-center text-sm md:text-base">
-                            Enhancing entrepreneurial and social efficacy by leveraging and upgrading the skill sets of
-                            our
-                            focus groups.
-                        </p>
+                    <div class="w-full md:w-1/2 flex items-center justify-center">
+                        <img src="https://imgs.search.brave.com/W8ssm1rrulP8WGCiwpA73cjrBqr3-Hc38jdU6P1KVbo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z2xvYmFsZ2l2aW5n/Lm9yZy9wZmlsLzI5/ODIwL3BpY3RfbGFy/Z2UuanBn"
+                            alt="Financial Literacy"
+                            class="h-full w-full object-cover rounded-xl border-2 border-black" />
                     </div>
                 </div>
-                <div class="flex justify-center mt-8 md:mt-12">
-                    <a href="./initiatives.html"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-xl font-medium transition">
-                        Know More →
-                    </a>
+
+                <!-- Repeat same card structure for other initiatives -->
+                <div class="bg-white flex flex-col md:flex-row gap-6 min-h-[400px]">
+                    <div
+                        class="w-full md:w-1/2 border-2 border-black rounded-3xl p-6 bg-blue-200 flex justify-center flex-col">
+                        <h4 class="text-2xl font-bold text-blue-700">Educational Equality</h4>
+                    </div>
+                    <div class="w-full md:w-1/2 flex items-center justify-center">
+                        <img src="https://imgs.search.brave.com/AucHn2oqgFMT0KByEz2a7KPVsqBoeyl_B0cw9MmJCe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzYxLzEyLzk4/LzM2MF9GXzg2MTEy/OTgwOV9nMUVYb3BS/dzloYnE5TWo3ZUxz/YWFxcFJra0dScmEx/My5qcGc"
+                            alt="Educational Equality"
+                            class="h-full w-full object-cover rounded-xl border-2 border-black" />
+                    </div>
+                </div>
+
+                <div class="bg-white flex flex-col md:flex-row gap-6 min-h-[400px]">
+                    <div
+                        class="w-full md:w-1/2 border-2 border-black rounded-3xl p-6 bg-blue-200 flex justify-center flex-col">
+                        <h4 class="text-2xl font-bold text-blue-700">Skill Development & Training</h4>
+                    </div>
+                    <div class="w-full md:w-1/2 flex items-center justify-center">
+                        <img src="https://imgs.search.brave.com/vD8fDvb9FhIEWKatI6zF9acZuSpDBLUxXS-2YPpLq5E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ha20t/aW1nLWEtaW4udG9z/c2h1Yi5jb20vaW5k/aWF0b2RheS9pbWFn/ZXMvc3RvcnkvMjAx/ODA5L1JUUzFNT1E4/LmpwZWc_c2l6ZT02/OTA6Mzg4"
+                            alt="Skill Development"
+                            class="h-full w-full object-cover rounded-xl border-2 border-black" />
+                    </div>
+                </div>
+
+                <div class="bg-white flex flex-col md:flex-row gap-6 min-h-[400px]">
+                    <div
+                        class="w-full md:w-1/2 border-2 border-black rounded-3xl p-6 bg-blue-200 flex justify-center flex-col">
+                        <h4 class="text-2xl font-bold text-blue-700">Gender Equality</h4>
+                    </div>
+                    <div class="w-full md:w-1/2 flex items-center justify-center">
+                        <img src="https://imgs.search.brave.com/iKV45_qfgtwAhnHef5ZS4EsLE6GHp--jPRczUksYEcw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dW5pY2VmdXNhLm9y/Zy9zaXRlcy9kZWZh/dWx0L2ZpbGVzL3N0/eWxlcy9sYXJnZS9w/dWJsaWMvVGVuZy1Q/aGFsbGFfMTUzQTk0/MThfMi5qcGcud2Vi/cD9pdG9rPWc4enRk/Tmxm"
+                            alt="Gender Equality" class="h-full w-full object-cover rounded-xl border-2 border-black" />
+                    </div>
                 </div>
             </div>
         </section>
+
+
 
         <!-- Impact -->
-        <section id="impact" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10 bg-[#f5fbf7] rounded-3xl">
+        <div id="impact" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10 bg-[#f5fbf7] rounded-3xl mt-12">
             <div class="max-w-6xl mx-auto text-center">
                 <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 md:mb-10">Our Impact</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                    <div class="space-y-3">
+                <div class="flex flex-col md:flex-row gap-8 place-items-center">
+                    <!-- Lives Empowered -->
+                    <div class="flex flex-col items-center space-y-2">
                         <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700">12,000+</div>
-                        <p class="text-gray-700">Lives Empowered</p>
+                        <p class="text-gray-700 text-center">Lives Empowered through education, training & support</p>
                     </div>
-                    <div class="space-y-3">
-                        <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700">126 Hrs</div>
-                        <p class="text-gray-700">Simulated Training Delivered</p>
+                    <!-- Trainings Conducted -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700">15+</div>
+                        <p class="text-gray-700 text-center">Structured Training Programs Conducted across India</p>
                     </div>
-                    <div class="space-y-3">
+                    <!-- Social Projects -->
+                    <div class="flex flex-col items-center space-y-2">
                         <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700">20+</div>
-                        <p class="text-gray-700">Social Projects Incubated</p>
+                        <p class="text-gray-700 text-center">Educational & Social Projects Completed</p>
+                    </div>
+                    <!-- Students Sponsored -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700">2+</div>
+                        <p class="text-gray-700 text-center">Students Sponsored for Academic Growth</p>
+                    </div>
+                    <!-- Regions Reached -->
+                    <div class="flex flex-col items-center space-y-2">
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700">10+</div>
+                        <p class="text-gray-700 text-center">Regions Impacted across Maharashtra, Telangana, MP, UP</p>
                     </div>
                 </div>
-                <div class="flex justify-center mt-8 md:mt-12">
+                <div class="flex justify-center mt-10">
                     <a href="./impact.html"
                         class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-xl font-medium transition">
                         Know More →
                     </a>
                 </div>
             </div>
+        </div>
+
+        <!-- Recognition -->
+        <section id="recognition" class="py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-10 bg-[#f0f7ff] rounded-3xl mt-16">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+
+                <!-- Text Content -->
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-800 mb-4">
+                        Industry Recognition
+                    </h3>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                        Our efforts have been
+                        recognized by the <span class="font-semibold">Asian African Chamber of Commerce &
+                            Industry</span>.
+                        The trust was honored with the prestigious award for
+                        <span class="italic">"Socially Responsible Trust in Education and Social Sector"</span>
+                        on <strong>10th Feb 2024</strong> at <strong>Mumbai, India</strong>.
+                    </p>
+                </div>
+
+                <!-- Image (Optional Award/Medal/Badge/Illustration) -->
+                <div class="w-full md:w-1/2">
+                    <img src="./images/1714547249317.jpeg" alt="Award Badge"
+                        class="w-full max-w-sm mx-auto object-contain rounded-xl shadow-md">
+                </div>
+            </div>
         </section>
 
+
+
+
         <!-- Volunteer -->
-        <section id="volunteer" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10">
+        <div id="volunteer" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10">
             <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 <div class="w-full md:w-1/2">
                     <img src="./images/1718019586390.jpeg" alt="Volunteer"
@@ -183,10 +240,10 @@
                         Now →</a>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- Updates -->
-        <section id="updates" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10 mb-6 md:mb-10 rounded-3xl"
+        <div id="updates" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10 mb-6 md:mb-10 rounded-3xl"
             style="background-color: #fff5ea;">
             <div class="max-w-6xl mx-auto">
                 <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-8 md:mb-12">Latest Updates</h3>
@@ -227,35 +284,70 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Founding Members -->
+        <div id="founders" class="py-14 sm:py-18 md:py-24 px-4 sm:px-8 md:px-16 bg-[#f5faff] rounded-3xl mt-16">
+            <div class="max-w-6xl mx-auto text-center">
+                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-12 text-blue-800">Founding Members</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+                    <!-- Member 1 -->
+                    <div class="flex flex-col items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-300">
+                        <img src="./images/member1.png" alt="Prof. Dr. Shilpi Agarwal"
+                            class="w-44 h-44 sm:w-52 sm:h-52 rounded-full mb-4 border-4 border-blue-300 object-cover shadow-md" />
+                        <h4 class="text-xl sm:text-2xl font-semibold text-blue-700 mb-1">Prof. Dr. Shilpi Agarwal</h4>
+                        <p class="text-gray-700 text-sm sm:text-base">Chief Trustee, Amishi Trust</p>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="flex flex-col items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-300">
+                        <img src="./images/member2.png" alt="Prof. Dr. Amit Aggrawal"
+                            class="w-44 h-44 sm:w-52 sm:h-52 rounded-full mb-4 border-4 border-blue-300 object-cover shadow-md" />
+                        <h4 class="text-xl sm:text-2xl font-semibold text-blue-700 mb-1">Prof. Dr. Amit Aggrawal</h4>
+                        <p class="text-gray-700 text-sm sm:text-base">Managing Trustee, Amishi Trust</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </div>
 
     <!-- Contact -->
-    <section id="contact" class="py-10 sm:py-12 md:py-16 px-2 sm:px-6 md:px-10">
+    <div id="contact" class="py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-10">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
+
+            <!-- Contact Info -->
             <div>
                 <h3 class="text-2xl sm:text-3xl font-semibold mb-4 text-blue-800">Get in Touch</h3>
-                <form class="grid gap-4">
-                    <input type="text" placeholder="Your Name" class="p-3 border border-gray-300 rounded-md bg-white"
-                        required>
-                    <input type="email" placeholder="Your Email" class="p-3 border border-gray-300 rounded-md bg-white"
-                        required>
-                    <textarea rows="4" placeholder="Your Message" class="p-3 border border-gray-300 rounded-md bg-white"
-                        required></textarea>
-                    <button type="submit"
-                        class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-md transition">
-                        Send Message
-                    </button>
-                </form>
+                <div class="space-y-4 text-gray-700 text-base sm:text-lg">
+                    <p>
+                        <span class="font-semibold text-blue-700">Phone 1:</span><br>
+                        <a href="tel:9967359477" class="text-blue-600 hover:underline">+91 99673 59477</a>
+                    </p>
+                    <p>
+                        <span class="font-semibold text-blue-700">Phone 2:</span><br>
+                        <a href="tel:9967359319" class="text-blue-600 hover:underline">+91 99673 59319</a>
+                    </p>
+                    <p>
+                        <span class="font-semibold text-blue-700">Email:</span><br>
+                        <a href="mailto:amishitrust@gmail.com"
+                            class="text-blue-600 hover:underline">amishitrust@gmail.com</a>
+                    </p>
+                </div>
             </div>
+
+            <!-- Map -->
             <div>
                 <iframe
                     src="https://maps.google.com/maps?q=CBD%20Belapur%2C%20Navi%20Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     class="w-full h-60 sm:h-72 rounded-lg border-0 shadow-sm" allowfullscreen></iframe>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="w-full py-8 md:py-10 text-center text-xs sm:text-sm text-gray-600 bg-white">
