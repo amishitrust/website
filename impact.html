@@ -1,174 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMISHI TRUST – Impact</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <style>
-        body { font-family: 'Poppins', sans-serif; background-color: #fffefc; }
-        .nav-open { overflow: hidden; }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
     </style>
 </head>
-<body class="text-blue-900 bg-[#fffefc]">
-    <div class="px-4 sm:px-8 md:px-20 lg:px-40">
-        <!-- Navbar -->
-        <header class="py-6 sticky top-0 bg-[#fffefc] z-10">
-            <div class="container mx-auto px-2 sm:px-6 md:px-10 flex justify-between items-center">
-                <img src="./images/logo.jpeg" class="h-[100px]" alt="AMISHI TRUST"/>
-                <!-- Hamburger -->
-                <button id="nav-toggle" class="md:hidden flex items-center px-3 py-2 rounded text-blue-900 hover:text-blue-600 focus:outline-none" aria-label="Open navigation">
-                    <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
+
+<body class="bg-white text-blue-900">
+
+    <!-- Navbar -->
+    <header class="py-6 bg-[#fffefc]">
+        <div class="container mx-auto px-2 sm:px-6 md:px-10 flex justify-between items-center">
+            <img src="./images/logo.jpeg" class="h-[100px]" alt="AMISHI TRUST" />
+            <button id="nav-toggle" class="md:hidden text-blue-700 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <nav id="nav-menu"
+                class="hidden md:flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-8 text-xs sm:text-sm font-medium absolute md:static top-20 left-0 w-full md:w-auto bg-[#fffefc] md:bg-transparent shadow md:shadow-none px-4 md:px-0 py-4 md:py-0 z-20">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="index.html#about" class="hover:text-blue-600">About</a>
+                <a href="index.html#scope" class="hover:text-blue-600">Scope of work</a>
+                <a href="impact.html" class="text-blue-600 font-semibold">Impact</a>
+                <a href="index.html#volunteer" class="hover:text-blue-600">Volunteer/Intern</a>
+                <a href="index.html#updates" class="hover:text-blue-600">Updates</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+                <button
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-2xl font-semibold shadow transform hover:scale-105 mt-2 md:mt-0">
+                    Contribute →
                 </button>
-                <!-- Desktop Nav -->
-                <nav class="hidden md:flex space-x-4 lg:space-x-8 text-sm font-medium items-center">
-                    <a href="/" class="hover:text-blue-600">Home</a>
-                    <a href="./impact.html" class="text-blue-600 font-semibold">Impact</a>
-                    <a href="./volunteer.html" class="hover:text-blue-600">Volunteer/Intern</a>
-                    <a href="./updates.html" class="hover:text-blue-600">Updates</a>
-                    <a href="#contact" class="hover:text-blue-600">Contact</a>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-2xl font-semibold shadow transition-transform hover:scale-105">
-                        Contribute →
-                    </button>
-                </nav>
-                <!-- Mobile Nav -->
-                <div id="mobile-nav" class="fixed inset-0 bg-[#fffefc] bg-opacity-95 z-50 flex flex-col items-center justify-center space-y-8 text-lg font-medium transition-all duration-300 transform translate-x-full md:hidden">
-                    <button id="nav-close" class="absolute top-6 right-6 text-3xl text-blue-900 hover:text-blue-600" aria-label="Close navigation">&times;</button>
-                    <a href="/" class="hover:text-blue-600" onclick="closeNav()">Home</a>
-                    <a href="./initiatives.html" class="hover:text-blue-600" onclick="closeNav()">Initiatives</a>
-                    <a href="./impact.html" class="text-blue-600 font-semibold" onclick="closeNav()">Impact</a>
-                    <a href="./volunteer.html" class="hover:text-blue-600" onclick="closeNav()">Volunteer/Intern</a>
-                    <a href="./updates.html" class="hover:text-blue-600" onclick="closeNav()">Updates</a>
-                    <a href="#contact" class="hover:text-blue-600" onclick="closeNav()">Contact</a>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-2xl font-semibold shadow transition-transform hover:scale-105">
-                        Contribute →
-                    </button>
-                </div>
-            </div>
-        </header>
+            </nav>
+        </div>
+        <script>
+            const navToggle = document.getElementById('nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+            navToggle.addEventListener('click', () => navMenu.classList.toggle('hidden'));
+            navMenu.querySelectorAll('a,button').forEach(el =>
+                el.addEventListener('click', () => { if (window.innerWidth < 768) navMenu.classList.add('hidden'); })
+            );
+        </script>
+    </header>
 
-        <!-- Hero -->
-        <section class="h-[50vh] sm:h-[60vh] md:h-[60vh] flex items-center justify-center text-center">
-            <h2 class="text-3xl sm:text-4xl md:text-6xl font-semibold max-w-4xl mx-auto leading-snug">
-                Your Support in Action: Measurable Change & Real Lives Touched
-            </h2>
-        </section>
-
-        <!-- Key Metrics -->
-        <section id="impact" class="py-16 sm:py-20 md:py-24 px-2 sm:px-4 md:px-10 bg-[#f5fbf7] rounded-3xl">
-            <div class="max-w-6xl mx-auto text-center">
-                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 sm:mb-8 md:mb-12">Key Impact Metrics</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                    <div><div class="text-4xl sm:text-5xl font-bold text-blue-700">12,000+</div><p class="text-gray-700">Lives Empowered</p></div>
-                    <div><div class="text-4xl sm:text-5xl font-bold text-blue-700">150+</div><p class="text-gray-700">Training Hours Delivered</p></div>
-                    <div><div class="text-4xl sm:text-5xl font-bold text-blue-700">30+</div><p class="text-gray-700">Programs Launched</p></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Outcome Stories -->
-        <section class="py-16 sm:py-20 md:py-24 px-2 sm:px-4 md:px-10">
-            <div class="max-w-6xl mx-auto">
-                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-6 sm:mb-8 md:mb-12">Impact in Community Voices</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-                    <div class="flex items-start space-x-4 sm:space-x-6">
-                        <img src="https://via.placeholder.com/120" class="rounded-full w-20 h-20 sm:w-28 sm:h-28" alt="Beneficiary">
-                        <div>
-                            <p class="italic text-gray-700">“Through the financial literacy program, I saved enough to support my daughter’s education. For the first time, I feel in control of my family’s future.”</p>
-                            <p class="mt-2 font-semibold">— Meera, Navi Mumbai</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4 sm:space-x-6">
-                        <img src="https://via.placeholder.com/120" class="rounded-full w-20 h-20 sm:w-28 sm:h-28" alt="Beneficiary">
-                        <div>
-                            <p class="italic text-gray-700">“With startup incubation, our group launched an eco-friendly waste recycling venture. We now produce reusable bags and train others.”</p>
-                            <p class="mt-2 font-semibold">— Aarav, Thane District</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- How It Works -->
-        <section class="py-16 sm:py-20 md:py-24 px-2 sm:px-4 md:px-10 bg-[#fff5ea] rounded-3xl">
-            <div class="max-w-6xl mx-auto">
-                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-6 sm:mb-8 md:mb-12">How We Deliver Impact</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 text-center">
-                    <div>
-                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">1. Identify Needs</h4>
-                        <p class="text-gray-700">We partner with local communities in Navi Mumbai & Thane to understand key challenges.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">2. Tailored Programs</h4>
-                        <p class="text-gray-700">Designed specialized training, bootcamps, and workshops focused on real-world outcomes.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">3. Ongoing Support</h4>
-                        <p class="text-gray-700">Participants continue receiving mentorship, peer support, and refresher sessions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="py-16 sm:py-20 md:py-24 px-2 sm:px-4 md:px-10 text-center">
-            <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-6">Ready to Make a Difference?</h3>
-            <p class="text-gray-700 mb-6 sm:mb-8">
-                Your involvement—whether as a donor, volunteer, or partner—helps scale our programs and amplify impact.
-            </p>
-            <a href="/volunteer" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-medium">
-                Get Involved Now →
-            </a>
-        </section>
+    <!-- Hero Banner -->
+    <div class="h-[50vh] sm:h-[60vh] flex items-center justify-center bg-[#8B4513] text-white">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold">
+            Our Educational &amp; Social Projects
+        </h1>
     </div>
 
-    <!-- Contact -->
-    <section id="contact" class="py-12 sm:py-16 px-2 sm:px-4 md:px-10 bg-[#f5fbf7]">
-        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-            <form class="space-y-4">
-                <h3 class="text-2xl sm:text-3xl font-semibold text-blue-800">Contact Us</h3>
-                <input type="text" name="name" placeholder="Name" class="w-full p-3 border-gray-300 rounded-md" required>
-                <input type="email" name="email" placeholder="Email" class="w-full p-3 border-gray-300 rounded-md" required>
-                <textarea name="message" rows="4" placeholder="Message" class="w-full p-3 border-gray-300 rounded-md" required></textarea>
-                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-md">
-                    Send Message
-                </button>
-            </form>
-            <iframe src="https://maps.google.com/maps?q=CBD%20Belapur%2C%20Navi%20Mumbai&z=13&output=embed"
-                class="w-full h-64 rounded-lg border-0 shadow-sm"></iframe>
+    <!-- Metrics Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">Our Impact In Numbers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">12,000+</div>
+                    <p class="text-gray-700">Lives Empowered through education, training & support</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">15+</div>
+                    <p class="text-gray-700">Structured Training Programs Conducted across India</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">20+</div>
+                    <p class="text-gray-700">Educational & Social Projects Completed</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">2+</div>
+                    <p class="text-gray-700">Students Sponsored for Academic Growth</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow p-6">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">10+</div>
+                    <p class="text-gray-700">Regions Impacted across Maharashtra, Telangana, MP, UP</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Impact Projects Grid -->
+    <section id="impact" class="py-12 px-2 sm:px-6 md:px-10 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Some of Our Key Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">1.</span>
+                    Interactive sessions at Balwadi (children’s home), CBD Belapur, Navi Mumbai, India
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">2.</span>
+                    English Training through Teach India to youth, girls and women
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">3.</span>
+                    Financial literacy training to youth at Govt. Degree College, Zaheerabad, Hyderabad
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">4.</span>
+                    Financial literacy training to primary students at Zila Parishad school, Kamkole, Sadasivpet
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">5.</span>
+                    English &amp; financial training at Rotary Club, Secunderabad, India
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">6.</span>
+                    Financial literacy sessions at Rotary Club, Guntur, Andhra Pradesh
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">7.</span>
+                    ERS activities for marginalized groups in and near Hyderabad
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">8.</span>
+                    ₹1 L academic incubation for Mr. Vijay Lahoti, MBA student, Woxsen University
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">9.</span>
+                    Donation of ₹4,400 for girl education – Anju at Mahabodhi Vidyalaya, Secunderabad
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">10.</span>
+                    Financial module for housekeeping staff, Woxsen University, Hyderabad
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">11.</span>
+                    English &amp; financial literacy underway in Navi Mumbai, Hyderabad &amp; Nashik
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">12.</span>
+                    Youth Development programs at Raebareilly, Uttar Pradesh
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">13.</span>
+                    Artisan training in Kolhapur, Maharashtra
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">14.</span>
+                    Artisan training in Maheshwar, Madhya Pradesh
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">15.</span>
+                    Artisan workshops in Mumbai
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">16.</span>
+                    Girl-child life-skills &amp; financial programs in Nashik
+                </div>
+                <div class="bg-white rounded-3xl shadow p-6">
+                    <span class="font-semibold text-blue-800">17.</span>
+                    Training programs for youth at Kurla &amp; Govandi, Mumbai
+                </div>
+            </div>
+            <div class="flex justify-center mt-10">
+                <a href="./Contact.html"
+                    class="bg-[#be7705] hover:bg-[#a66204] text-white px-8 py-3 rounded-xl font-semibold transition">
+                    Get Involved →
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 sm:py-10 text-center text-xs sm:text-sm text-gray-600 bg-white">
+    <footer class="w-full py-8 text-center text-xs sm:text-sm text-gray-600 bg-white">
         © 2025 AMISHI TRUST. All rights reserved.
     </footer>
 
-    <script>
-        const navToggle = document.getElementById('nav-toggle');
-        const mobileNav = document.getElementById('mobile-nav');
-        const navClose = document.getElementById('nav-close');
-        function openNav() {
-            mobileNav.classList.remove('translate-x-full');
-            document.body.classList.add('nav-open');
-        }
-        function closeNav() {
-            mobileNav.classList.add('translate-x-full');
-            document.body.classList.remove('nav-open');
-        }
-        navToggle.addEventListener('click', openNav);
-        navClose.addEventListener('click', closeNav);
-        // Close nav on link click (for anchor links)
-        mobileNav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', closeNav);
-        });
-        // Close nav on outside click
-        mobileNav.addEventListener('click', function(e) {
-            if (e.target === mobileNav) closeNav();
-        });
-    </script>
 </body>
+
 </html>
