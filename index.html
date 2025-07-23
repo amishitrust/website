@@ -1,660 +1,989 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMISHI TRUST - Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css "
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
 
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      @layer utilities {
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
         }
 
-        @layer utilities {
-            .no-scrollbar::-webkit-scrollbar {
-                display: none;
-            }
-
-            .no-scrollbar {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
+        .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-white text-blue-900">
-
+  <body class="bg-white text-blue-900">
     <div class="">
-        <!-- Navbar -->
-        <header class="relative bg-[#fffefc]">
-            <!-- Top Bar -->
+      <!-- Navbar -->
+      <header class="relative bg-[#fffefc]">
+        <!-- Top Bar -->
 
-            <a href="./index.html"
-                class="absolute top-0 left-4 sm:top-0 sm:left-6 z-[100] w-[12vh] h-[12vh] sm:w-[16vh] sm:h-[16vh] md:w-[20vh] md:h-[20vh]">
-                <div>
-                    <img src="./images/logo.jpeg" alt="Logo" class="w-full h-full object-contain rounded-b-2xl" />
-                </div>
-            </a>
+        <a
+          href="./index.html"
+          class="absolute top-0 left-4 sm:top-0 sm:left-6 z-[100] w-[12vh] h-[12vh] sm:w-[16vh] sm:h-[16vh] md:w-[20vh] md:h-[20vh]"
+        >
+          <div>
+            <img
+              src="./images/logo.jpeg"
+              alt="Logo"
+              class="w-full h-full object-contain rounded-b-2xl"
+            />
+          </div>
+        </a>
 
+        <!-- Top Bar -->
+        <div
+          class="bg-black text-white flex flex-row items-center justify-between px-4 md:px-10 py-2 w-full"
+        >
+          <!-- Placeholder div to occupy space so ml-auto works on mobile -->
+          <div class="w-full sm:w-auto"></div>
 
-            <!-- Top Bar -->
-            <div class="bg-black text-white flex flex-row items-center justify-between px-4 md:px-10 py-2 w-full">
-
-                <!-- Placeholder div to occupy space so ml-auto works on mobile -->
-                <div class="w-full sm:w-auto"></div>
-
-                <div class="flex flex-col md:flex-row ">
-
-                    <!-- Contact Info aligned to far right always -->
-                    <div class="flex flex-col md:flex-row gap-x-4 gap-y-2 items-center text-sm sm:text-base ml-auto">
-                        <!-- Phone 1 -->
-                        <a href="tel:+919967359477"
-                            class="flex items-center gap-1 hover:no-underline whitespace-nowrap">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M2 6.5C2 5.12 3.12 4 4.5 4h2A2.5 2.5 0 019 6.5V8a2 2 0 01-2 2H5v2h2a2 2 0 012 2v1.5A2.5 2.5 0 016.5 18h-2A2.5 2.5 0 012 15.5v-9z" />
-                            </svg>
-                            +91 99673 59477
-                        </a>
-
-                        <!-- Phone 2 -->
-                        <a href="tel:+919967359319"
-                            class="flex items-center gap-1 hover:no-underline whitespace-nowrap">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M2 6.5C2 5.12 3.12 4 4.5 4h2A2.5 2.5 0 019 6.5V8a2 2 0 01-2 2H5v2h2a2 2 0 012 2v1.5A2.5 2.5 0 016.5 18h-2A2.5 2.5 0 012 15.5v-9z" />
-                            </svg>
-                            +91 99673 59319
-                        </a>
-
-                        <!-- Email -->
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amishitrust@gmail.com" target="_blank"
-                            class="flex items-center gap-1 hover:no-underline whitespace-nowrap">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M16 12H8m0 0l4-4m-4 4l4 4m8-12H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z" />
-                            </svg>
-                            amishitrust@gmail.com
-                        </a>
-                    </div>
-
-                    <!-- Search Bar -->
-                    <div class="ml-4 w-full sm:w-auto sm:flex hidden sm:block">
-                        <input type="text" placeholder="Search..."
-                            class="px-3 py-1 rounded-md text-black text-sm w-full sm:w-auto" />
-                    </div>
-
-                    <!-- Social Icons -->
-                    <div class="flex items-center space-x-3 ml-4">
-                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                            <img height="20" width="20" src="./images/facebook.png" />
-                        </a>
-                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                            <img height="20" width="20" src="./images/instagram.png" />
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                            <img height="20" width="20" src="./images/linkedin.png" />
-                        </a>
-                        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-                            <img height="20" width="20" src="./images/youtube.png" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-            <div class="container h-[10vh] mx-auto px-2 sm:px-6 md:px-10 flex justify-between items-center">
-                <div></div>
-                <!-- Hamburger Button (Mobile) -->
-                <button id="nav-toggle" class="md:hidden block text-blue-700 focus:outline-none"
-                    aria-label="Toggle navigation">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-                <!-- Nav Links -->
-                <nav id="nav-menu"
-                    class="hidden md:flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 space-x-0 md:space-x-8 text-xs sm:text-sm font-medium absolute md:static top-[200px] left-0 z-[200] w-full md:w-auto bg-[#fffefc] md:bg-transparent shadow md:shadow-none px-4 md:px-0 py-4 md:py-0 z-20">
-                    <a href="#about" class="hover:text-blue-600 transition block md:inline">About</a>
-                    <a href="#scope" class="hover:text-blue-600 transition block md:inline">Scope</a>
-                    <a href="#impact" class="hover:text-blue-600 transition block md:inline">Impact</a>
-                    <a href="#volunteer" class="hover:text-blue-600 transition block md:inline">Volunteer/Intern</a>
-                    <a href="#updates" class="hover:text-blue-600 transition block md:inline">Updates</a>
-                    <a href="#contact" class="hover:text-blue-600 transition block md:inline">Contact</a>
-                    <button
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-2xl font-semibold shadow transition-transform transform hover:scale-105 mt-2 md:mt-0">
-                        Contribute →
-                    </button>
-                </nav>
-            </div>
-            <script>
-                // Navbar toggle script
-                const navToggle = document.getElementById('nav-toggle');
-                const navMenu = document.getElementById('nav-menu');
-                navToggle.addEventListener('click', () => {
-                    navMenu.classList.toggle('hidden');
-                });
-                // Optional: Hide menu on link click (mobile)
-                navMenu.querySelectorAll('a,button').forEach(el => {
-                    el.addEventListener('click', () => {
-                        if (window.innerWidth < 768) navMenu.classList.add('hidden');
-                    });
-                });
-            </script>
-        </header>
-
-
-
-        
-        <!-- Carousel Wrapper -->
-        <div id="default-carousel" class="relative w-full mb-[20vh]" data-carousel="slide">
-            <div class="relative h-[80vh] md:h-[90vh] overflow-hidden">
-
-                <!-- Slide 1 -->
-                <div class="hidden duration-700 ease-in-out absolute inset-0 flex flex-col md:flex-row items-center justify-center px-6 transition-all transform translate-x-0 z-20"
-                    data-carousel-item="active" style="background-color: #2876b4;">
-
-                    <!-- Text Section -->
-                    <div class="w-full md:w-1/2 p-6">
-                        <h2 class="font-serif text-white text-4xl md:text-6xl font-bold mb-4">Empowering Lives</h2>
-                        <p class="text-white text-lg md:text-xl">With compassion and collective action.</p>
-                    </div>
-
-                    <!-- Image Section (no wrappers) -->
-                    <div class="w-full md:w-1/2 p-6 flex justify-center items-center">
-                        <img src="./images/1718984167400.jpeg" alt="Empowering"
-                            class="rounded-2xl h-auto max-h-[65vh] object-contain bg-blend-overlay" />
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="hidden duration-700 ease-in-out absolute inset-0 flex flex-col md:flex-row items-center justify-center px-6 transition-all transform translate-x-full z-10"
-                    data-carousel-item style="background-color: #2876b4;">
-
-                    <div class="w-full md:w-1/2 p-6">
-                        <h2 class="font-serif text-white text-4xl md:text-6xl font-bold mb-4">Inclusive Education</h2>
-                        <p class="text-white text-lg md:text-xl">Bridging gaps, building futures.</p>
-                    </div>
-
-                    <div class="w-full md:w-1/2 p-6 flex justify-center items-center">
-                        <img src="./images/1718019587734.jpeg" alt="Education"
-                            class="rounded-2xl h-auto max-h-[65vh] object-contain bg-blend-overlay" />
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="hidden duration-700 ease-in-out absolute inset-0 flex flex-col md:flex-row items-center justify-center px-6 transition-all transform -translate-x-full z-10"
-                    data-carousel-item style="background-color: #2876b4;">
-
-                    <div class="w-full md:w-1/2 p-6">
-                        <h2 class="font-serif text-white text-4xl md:text-6xl font-bold mb-4">Join Our Movement</h2>
-                        <p class="text-white text-lg md:text-xl">Volunteer, advocate, and empower.</p>
-                    </div>
-
-                    <div class="w-full md:w-1/2 p-6 flex justify-center items-center">
-                        <img src="./images/logo.jpeg" alt="Join Movement"
-                            class="rounded-2xl h-auto max-h-[65vh] object-contain bg-blend-overlay" />
-                    </div>
-                </div>
-            </div>
-
-            <!-- Indicators -->
-            <div class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3">
-                <button type="button" class="w-3 h-3 bg-white/75 rounded-full" data-carousel-slide-to="0"
-                    aria-current="true"></button>
-                <button type="button" class="w-3 h-3 bg-white/50 rounded-full" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 bg-white/50 rounded-full" data-carousel-slide-to="2"></button>
-            </div>
-
-            <!-- Controls -->
-            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4"
-                data-carousel-prev>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
-                    <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                    </svg>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4"
-                data-carousel-next>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50">
-                    <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-width="2" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </span>
-            </button>
-        </div>
-
-
-
-
-
-
-
-
-        <!-- About Section -->
-        <section id="about"
-            class="flex flex-col-reverse md:flex-row gap-8 items-stretch justify-between mb-12 px-4 sm:px-8 md:px-16 lg:px-[20vh] min-h-[60vh] md:min-h-[45vh]">
-
-            <!-- Text Content -->
+          <div class="flex flex-col md:flex-row">
+            <!-- Contact Info aligned to far right always -->
             <div
-                class="w-full md:w-2/5 rounded-3xl p-6 bg-[#2876b4] text-white flex flex-col items-center justify-center">
-                <h3 class="text-3xl sm:text-4xl font-bold mb-4 text-center">Our Mission</h3>
-                <p class="leading-relaxed text-center text-sm sm:text-base">
-                    Our mission is to revolutionize the societal landscape by harnessing the collective skills and
-                    strengths of individuals from diverse backgrounds, fostering inclusive education and empowerment.
-                </p>
+              class="flex flex-col md:flex-row gap-x-4 gap-y-2 items-center text-sm sm:text-base ml-auto"
+            >
+              <!-- Phone 1 -->
+              <a
+                href="tel:+919967359477"
+                class="flex items-center gap-1 hover:no-underline whitespace-nowrap"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M2 6.5C2 5.12 3.12 4 4.5 4h2A2.5 2.5 0 019 6.5V8a2 2 0 01-2 2H5v2h2a2 2 0 012 2v1.5A2.5 2.5 0 016.5 18h-2A2.5 2.5 0 012 15.5v-9z"
+                  />
+                </svg>
+                +91 99673 59477
+              </a>
+
+              <!-- Phone 2 -->
+              <a
+                href="tel:+919967359319"
+                class="flex items-center gap-1 hover:no-underline whitespace-nowrap"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M2 6.5C2 5.12 3.12 4 4.5 4h2A2.5 2.5 0 019 6.5V8a2 2 0 01-2 2H5v2h2a2 2 0 012 2v1.5A2.5 2.5 0 016.5 18h-2A2.5 2.5 0 012 15.5v-9z"
+                  />
+                </svg>
+                +91 99673 59319
+              </a>
+
+              <!-- Email -->
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=amishitrust@gmail.com"
+                target="_blank"
+                class="flex items-center gap-1 hover:no-underline whitespace-nowrap"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 12H8m0 0l4-4m-4 4l4 4m8-12H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"
+                  />
+                </svg>
+                amishitrust@gmail.com
+              </a>
             </div>
 
-            <!-- Image -->
-            <div class="w-full md:w-3/5 h-64 sm:h-80 md:h-full">
-                <img src="./images/1714335605464.jpeg" alt="About Image"
-                    class="rounded-3xl w-full h-full object-cover" />
+            <!-- Search Bar -->
+            <div class="ml-4 w-full sm:w-auto sm:flex hidden sm:block">
+              <input
+                type="text"
+                placeholder="Search..."
+                class="px-3 py-1 rounded-md text-black text-sm w-full sm:w-auto"
+              />
             </div>
-        </section>
 
+            <!-- Social Icons -->
+            <div class="flex items-center space-x-3 ml-4">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <img height="20" width="20" src="./images/facebook.png" />
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <img height="20" width="20" src="./images/instagram.png" />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <img height="20" width="20" src="./images/linkedin.png" />
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <img height="20" width="20" src="./images/youtube.png" />
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <div
+          class="container h-[10vh] mx-auto px-2 sm:px-6 md:px-10 flex justify-between items-center"
+        >
+          <div></div>
+          <!-- Hamburger Button (Mobile) -->
+          <button
+            id="nav-toggle"
+            class="md:hidden block text-blue-700 focus:outline-none"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <!-- Nav Links -->
+          <nav
+            id="nav-menu"
+            class="hidden md:flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 space-x-0 md:space-x-8 text-xs sm:text-sm font-medium absolute md:static top-[200px] left-0 z-[200] w-full md:w-auto bg-[#fffefc] md:bg-transparent shadow md:shadow-none px-4 md:px-0 py-4 md:py-0 z-20"
+          >
+            <a
+              href="#about"
+              class="hover:text-blue-600 transition block md:inline"
+              >About</a
+            >
+            <a
+              href="#scope"
+              class="hover:text-blue-600 transition block md:inline"
+              >Scope</a
+            >
+            <a
+              href="#impact"
+              class="hover:text-blue-600 transition block md:inline"
+              >Impact</a
+            >
+            <a
+              href="#volunteer"
+              class="hover:text-blue-600 transition block md:inline"
+              >Volunteer/Intern</a
+            >
+            <a
+              href="#updates"
+              class="hover:text-blue-600 transition block md:inline"
+              >Updates</a
+            >
+            <a
+              href="#contact"
+              class="hover:text-blue-600 transition block md:inline"
+              >Contact</a
+            >
+            <button
+              class="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-2xl font-semibold shadow transition-transform transform hover:scale-105 mt-2 md:mt-0"
+            >
+              Contribute →
+            </button>
+          </nav>
+        </div>
+        <script>
+          // Navbar toggle script
+          const navToggle = document.getElementById("nav-toggle");
+          const navMenu = document.getElementById("nav-menu");
+          navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+          });
+          // Optional: Hide menu on link click (mobile)
+          navMenu.querySelectorAll("a,button").forEach((el) => {
+            el.addEventListener("click", () => {
+              if (window.innerWidth < 768) navMenu.classList.add("hidden");
+            });
+          });
+        </script>
+      </header>
 
+      <!-- Carousel Wrapper -->
+      <div
+        id="default-carousel"
+        class="relative w-full mb-[20vh]"
+        data-carousel="slide"
+      >
+        <div class="relative h-[80vh] md:h-[90vh] overflow-hidden">
+          <!-- Slide 1 -->
+          <div
+            class="hidden duration-700 ease-in-out absolute inset-0 flex flex-col md:flex-row items-center justify-center px-6 transition-all transform translate-x-0 z-20"
+            data-carousel-item="active"
+            style="background-color: #2876b4"
+          >
+            <!-- Text Section -->
+            <div class="w-full md:w-1/2 p-6">
+              <h2
+                class="font-serif text-white text-4xl md:text-6xl font-bold mb-4"
+              >
+                Empowering Lives
+              </h2>
+              <p class="text-white text-lg md:text-xl">
+                With compassion and collective action.
+              </p>
+            </div>
 
+            <!-- Image Section (no wrappers) -->
+            <div class="w-full md:w-1/2 p-6 flex justify-center items-center">
+              <img
+                src="./images/1718984167400.jpeg"
+                alt="Empowering"
+                class="rounded-2xl h-auto max-h-[65vh] object-contain bg-blend-overlay"
+              />
+            </div>
+          </div>
 
-        <!-- scope -->
-        <section id="scope" class="mt-12 mb-10 px-4 sm:px-8 md:px-16 lg:px-[20vh]">
-            <h3 class="text-3xl md:text-4xl font-bold text-center md:text-left">
-                Scope of work
+          <!-- Slide 2 -->
+          <div
+            class="hidden duration-700 ease-in-out absolute inset-0 flex flex-col md:flex-row items-center justify-center px-6 transition-all transform translate-x-full z-10"
+            data-carousel-item
+            style="background-color: #2876b4"
+          >
+            <div class="w-full md:w-1/2 p-6">
+              <h2
+                class="font-serif text-white text-4xl md:text-6xl font-bold mb-4"
+              >
+                Inclusive Education
+              </h2>
+              <p class="text-white text-lg md:text-xl">
+                Bridging gaps, building futures.
+              </p>
+            </div>
+
+            <div class="w-full md:w-1/2 p-6 flex justify-center items-center">
+              <img
+                src="./images/1718019587734.jpeg"
+                alt="Education"
+                class="rounded-2xl h-auto max-h-[65vh] object-contain bg-blend-overlay"
+              />
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="hidden duration-700 ease-in-out absolute inset-0 flex flex-col md:flex-row items-center justify-center px-6 transition-all transform -translate-x-full z-10"
+            data-carousel-item
+            style="background-color: #2876b4"
+          >
+            <div class="w-full md:w-1/2 p-6">
+              <h2
+                class="font-serif text-white text-4xl md:text-6xl font-bold mb-4"
+              >
+                Join Our Movement
+              </h2>
+              <p class="text-white text-lg md:text-xl">
+                Volunteer, advocate, and empower.
+              </p>
+            </div>
+
+            <div class="w-full md:w-1/2 p-6 flex justify-center items-center">
+              <img
+                src="./images/logo.jpeg"
+                alt="Join Movement"
+                class="rounded-2xl h-auto max-h-[65vh] object-contain bg-blend-overlay"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicators -->
+        <div
+          class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 bg-white/75 rounded-full"
+            data-carousel-slide-to="0"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 bg-white/50 rounded-full"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 bg-white/50 rounded-full"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- Controls -->
+        <button
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50"
+          >
+            <svg
+              class="w-5 h-5 text-black"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-width="2"
+                stroke-linejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50"
+          >
+            <svg
+              class="w-5 h-5 text-black"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-width="2"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <!-- About Section -->
+      <section
+        id="about"
+        class="flex flex-col-reverse md:flex-row gap-8 items-stretch justify-between mb-12 px-4 sm:px-8 md:px-16 lg:px-[20vh] min-h-[60vh] md:min-h-[45vh]"
+      >
+        <!-- Text Content -->
+        <div
+          class="w-full md:w-2/5 rounded-3xl p-6 bg-[#2876b4] text-white flex flex-col items-center justify-center"
+        >
+          <h3 class="text-3xl sm:text-4xl font-bold mb-4 text-center">
+            Our Mission
+          </h3>
+          <p class="leading-relaxed text-center text-sm sm:text-base">
+            Our mission is to revolutionize the societal landscape by harnessing
+            the collective skills and strengths of individuals from diverse
+            backgrounds, fostering inclusive education and empowerment.
+          </p>
+        </div>
+
+        <!-- Image -->
+        <div class="w-full md:w-3/5 h-64 sm:h-80 md:h-full">
+          <img
+            src="./images/1714335605464.jpeg"
+            alt="About Image"
+            class="rounded-3xl w-full h-full object-cover"
+          />
+        </div>
+      </section>
+
+      <!-- scope -->
+      <section
+        id="scope"
+        class="mt-12 mb-10 px-4 sm:px-8 md:px-16 lg:px-[20vh]"
+      >
+        <h3 class="text-3xl md:text-4xl font-bold text-center md:text-left">
+          Scope of work
+        </h3>
+
+        <!-- outer grid: 1 col on mobile, 2 on lg+ -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
+          <!-- Card 1 -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white min-h-[24rem] sm:min-h-[26rem]"
+          >
+            <div
+              class="p-6 bg-[#d6b022] flex items-center justify-center rounded-3xl"
+            >
+              <h4 class="text-xl sm:text-2xl font-bold text-white text-center">
+                Financial Literacy
+              </h4>
+            </div>
+            <div class="flex items-center justify-center h-48 sm:h-auto">
+              <img
+                src="https://imgs.search.brave.com/W8ssm1rrulP8WGCiwpA73cjrBqr3-Hc38jdU6P1KVbo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z2xvYmFsZ2l2aW5n/Lm9yZy9wZmlsLzI5/ODIwL3BpY3RfbGFy/Z2UuanBn"
+                alt="Financial Literacy"
+                class="w-full h-full object-cover rounded-xl"
+              />
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white min-h-[24rem] sm:min-h-[26rem]"
+          >
+            <div
+              class="p-6 bg-[#d6b022] flex items-center justify-center rounded-3xl"
+            >
+              <h4 class="text-xl sm:text-2xl font-bold text-white text-center">
+                Educational Equality
+              </h4>
+            </div>
+            <div class="flex items-center justify-center h-48 sm:h-auto">
+              <img
+                src="https://imgs.search.brave.com/AucHn2oqgFMT0KByEz2a7KPVsqBoeyl_B0cw9MmJCe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzYxLzEyLzk4/LzM2MF9GXzg2MTEy/OTgwOV9nMUVYb3BS/dzloYnE5TWo3ZUxz/YWFxcFJra0dScmEx/My5qcGc"
+                alt="Educational Equality"
+                class="w-full h-full object-cover rounded-xl"
+              />
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white min-h-[24rem] sm:min-h-[26rem]"
+          >
+            <div
+              class="p-6 bg-[#d6b022] flex items-center justify-center rounded-3xl"
+            >
+              <h4 class="text-xl sm:text-2xl font-bold text-white text-center">
+                Skill Development & Training
+              </h4>
+            </div>
+            <div class="flex items-center justify-center h-48 sm:h-auto">
+              <img
+                src="https://imgs.search.brave.com/vD8fDvb9FhIEWKatI6zF9acZuSpDBLUxXS-2YPpLq5E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ha20t/aW1nLWEtaW4udG9z/c2h1Yi5jb20vaW5k/aWF0b2RheS9pbWFn/ZXMvc3RvcnkvMjAx/ODA5L1JUUzFNT1E4/LmpwZWc_c2l6ZT02/OTA6Mzg4"
+                alt="Skill Development"
+                class="w-full h-full object-cover rounded-xl"
+              />
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white min-h-[24rem] sm:min-h-[26rem]"
+          >
+            <div
+              class="p-6 bg-[#d6b022] flex items-center justify-center rounded-3xl"
+            >
+              <h4 class="text-xl sm:text-2xl font-bold text-white text-center">
+                Gender Equality
+              </h4>
+            </div>
+            <div class="flex items-center justify-center h-48 sm:h-auto">
+              <img
+                src="https://imgs.search.brave.com/iKV45_qfgtwAhnHef5ZS4EsLE6GHp--jPRczUksYEcw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dW5pY2VmdXNhLm9y/Zy9zaXRlcy9kZWZh/dWx0L2ZpbGVzL3N0/eWxlcy9sYXJnZS9w/dWJsaWMvVGVuZy1Q/aGFsbGFfMTUzQTk0/MThfMi5qcGcud2Vi/cD9pdG9rPWc4enRk/Tmxm"
+                alt="Gender Equality"
+                class="w-full h-full object-cover rounded-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact -->
+      <div
+        id="impact"
+        class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10 bg-gray-200 text-black mt-12"
+      >
+        <div class="max-w-6xl mx-auto text-center">
+          <h3
+            class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 md:mb-10"
+          >
+            Our Impact
+          </h3>
+          <div class="flex flex-col md:flex-row gap-8 place-items-center">
+            <!-- Lives Empowered -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="text-3xl sm:text-4xl md:text-5xl font-bold">
+                12,000
+              </div>
+              <p class="text-center">
+                Lives Empowered through education, training & support
+              </p>
+            </div>
+            <!-- Trainings Conducted -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="text-3xl sm:text-4xl md:text-5xl font-bold">15</div>
+              <p class="text-center">
+                Structured Training Programs Conducted across India
+              </p>
+            </div>
+            <!-- Social Projects -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="text-3xl sm:text-4xl md:text-5xl font-bold">72</div>
+              <p class="text-center">Educational & Social Projects Completed</p>
+            </div>
+            <!-- Students Sponsored -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="text-3xl sm:text-4xl md:text-5xl font-bold">2</div>
+              <p class="text-center">Students Sponsored for Academic Growth</p>
+            </div>
+            <!-- Regions Reached -->
+            <div class="flex flex-col items-center space-y-2">
+              <div class="text-3xl sm:text-4xl md:text-5xl font-bold">10</div>
+              <p class="text-center">
+                Regions Impacted across Maharashtra, Telangana, MP, UP
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center mt-10">
+            <a
+              href="./impact.html"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-xl font-medium transition"
+            >
+              Know More →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recognition -->
+      <section id="recognition" class="bg-[#0f6da5] text-white py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">
+            Industry Recognition
+          </h2>
+
+          <!-- Flex wrapper to center the grid -->
+          <div class="flex justify-center">
+            <!-- Grid with fixed width (like max-w) or auto sizing -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl"
+            >
+              <!-- Card -->
+              <div
+                class="bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col w-full max-w-sm"
+              >
+                <img
+                  src="./images/1714547249317.jpeg"
+                  alt="Award Badge"
+                  class="object-cover w-full h-60"
+                />
+                <div class="p-6 text-black flex-1 flex flex-col">
+                  <h3 class="text-xl font-semibold mb-3">
+                    Asian African Chamber of Commerce & Industry
+                  </h3>
+                  <p class="text-sm leading-relaxed flex-grow">
+                    Our efforts were recognized with the award for
+                    <span class="italic"
+                      >"Socially Responsible Trust in Education and Social
+                      Sector"</span
+                    >
+                    on <strong>10th Feb 2024</strong> at
+                    <strong>Mumbai, India</strong>.
+                  </p>
+                </div>
+              </div>
+              <!-- Add more cards if needed -->
+              <div
+                class="bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col w-full max-w-sm"
+              >
+                <img
+                  src="./images/award-final.png"
+                  alt="Award Badge"
+                  class="object-fit w-full h-60"
+                />
+                <div class="p-6 text-black flex-1 flex flex-col">
+                  <h3 class="text-xl font-semibold mb-3">
+                    2023 CEEMAN Champions Award
+                  </h3>
+                  <p class="text-sm leading-relaxed flex-grow">
+                    Awarded for Responsible Management Educator on
+                    <strong>21 Sep 2023</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Volunteer -->
+      <div id="volunteer" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10">
+        <div
+          class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12"
+        >
+          <div class="w-full md:w-1/2">
+            <img
+              src="./images/1718019586390.jpeg"
+              alt="Volunteer"
+              class="rounded-xl shadow-md w-full h-52 sm:h-64 md:h-80 object-cover"
+            />
+          </div>
+          <div class="w-full md:w-1/2 text-center md:text-left">
+            <h3
+              class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 md:mb-6"
+            >
+              Become a Volunteer or Intern
             </h3>
-
-            <!-- outer grid: 1 col on mobile, 2 on lg+ -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
-
-                <!-- Card 1 -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white min-h-[24rem] sm:min-h-[26rem]">
-                    <div class="p-6 bg-[#d6b022] flex items-center justify-center rounded-3xl">
-                        <h4 class="text-xl sm:text-2xl font-bold text-white text-center">
-                            Financial Literacy
-                        </h4>
-                    </div>
-                    <div class="flex items-center justify-center h-48 sm:h-auto">
-                        <img src="https://imgs.search.brave.com/W8ssm1rrulP8WGCiwpA73cjrBqr3-Hc38jdU6P1KVbo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z2xvYmFsZ2l2aW5n/Lm9yZy9wZmlsLzI5/ODIwL3BpY3RfbGFy/Z2UuanBn"
-                            alt="Financial Literacy" class="w-full h-full object-cover rounded-xl" />
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white min-h-[24rem] sm:min-h-[26rem]">
-                    <div class="p-6 bg-[#d6b022] flex items-center justify-center rounded-3xl">
-                        <h4 class="text-xl sm:text-2xl font-bold text-white text-center">
-                            Educational Equality
-                        </h4>
-                    </div>
-                    <div class="flex items-center justify-center h-48 sm:h-auto">
-                        <img src="https://imgs.search.brave.com/AucHn2oqgFMT0KByEz2a7KPVsqBoeyl_B0cw9MmJCe0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzYxLzEyLzk4/LzM2MF9GXzg2MTEy/OTgwOV9nMUVYb3BS/dzloYnE5TWo3ZUxz/YWFxcFJra0dScmEx/My5qcGc"
-                            alt="Educational Equality" class="w-full h-full object-cover rounded-xl" />
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white min-h-[24rem] sm:min-h-[26rem]">
-                    <div class="p-6 bg-[#d6b022] flex items-center justify-center rounded-3xl">
-                        <h4 class="text-xl sm:text-2xl font-bold text-white text-center">
-                            Skill Development & Training
-                        </h4>
-                    </div>
-                    <div class="flex items-center justify-center h-48 sm:h-auto">
-                        <img src="https://imgs.search.brave.com/vD8fDvb9FhIEWKatI6zF9acZuSpDBLUxXS-2YPpLq5E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ha20t/aW1nLWEtaW4udG9z/c2h1Yi5jb20vaW5k/aWF0b2RheS9pbWFn/ZXMvc3RvcnkvMjAx/ODA5L1JUUzFNT1E4/LmpwZWc_c2l6ZT02/OTA6Mzg4"
-                            alt="Skill Development" class="w-full h-full object-cover rounded-xl" />
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white min-h-[24rem] sm:min-h-[26rem]">
-                    <div class="p-6 bg-[#d6b022] flex items-center justify-center rounded-3xl">
-                        <h4 class="text-xl sm:text-2xl font-bold text-white text-center">
-                            Gender Equality
-                        </h4>
-                    </div>
-                    <div class="flex items-center justify-center h-48 sm:h-auto">
-                        <img src="https://imgs.search.brave.com/iKV45_qfgtwAhnHef5ZS4EsLE6GHp--jPRczUksYEcw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dW5pY2VmdXNhLm9y/Zy9zaXRlcy9kZWZh/dWx0L2ZpbGVzL3N0/eWxlcy9sYXJnZS9w/dWJsaWMvVGVuZy1Q/aGFsbGFfMTUzQTk0/MThfMi5qcGcud2Vi/cD9pdG9rPWc4enRk/Tmxm"
-                            alt="Gender Equality" class="w-full h-full object-cover rounded-xl" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-        <!-- Impact -->
-        <div id="impact" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10 bg-gray-200 text-black mt-12">
-            <div class="max-w-6xl mx-auto text-center">
-                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 md:mb-10">Our Impact</h3>
-                <div class="flex flex-col md:flex-row gap-8 place-items-center">
-                    <!-- Lives Empowered -->
-                    <div class="flex flex-col items-center space-y-2">
-                        <div class="text-3xl sm:text-4xl md:text-5xl font-bold">12,000</div>
-                        <p class="text-center">Lives Empowered through education, training & support</p>
-                    </div>
-                    <!-- Trainings Conducted -->
-                    <div class="flex flex-col items-center space-y-2">
-                        <div class="text-3xl sm:text-4xl md:text-5xl font-bold">15</div>
-                        <p class=" text-center">Structured Training Programs Conducted across India</p>
-                    </div>
-                    <!-- Social Projects -->
-                    <div class="flex flex-col items-center space-y-2">
-                        <div class="text-3xl sm:text-4xl md:text-5xl font-bold">72</div>
-                        <p class="text-center">Educational & Social Projects Completed</p>
-                    </div>
-                    <!-- Students Sponsored -->
-                    <div class="flex flex-col items-center space-y-2">
-                        <div class="text-3xl sm:text-4xl md:text-5xl font-bold">2</div>
-                        <p class="text-center">Students Sponsored for Academic Growth</p>
-                    </div>
-                    <!-- Regions Reached -->
-                    <div class="flex flex-col items-center space-y-2">
-                        <div class="text-3xl sm:text-4xl md:text-5xl font-bold">10</div>
-                        <p class="text-center">Regions Impacted across Maharashtra, Telangana, MP, UP</p>
-                    </div>
-                </div>
-                <div class="flex justify-center mt-10">
-                    <a href="./impact.html"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-xl font-medium transition">
-                        Know More →
-                    </a>
-                </div>
-            </div>
+            <p
+              class="text-gray-700 mb-6 md:mb-8 leading-relaxed text-sm md:text-base"
+            >
+              Join our mission to drive social change through skill, compassion,
+              and collaboration.
+            </p>
+            <a
+              href="./volunteer.html"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-xl font-medium"
+              >Apply Now →</a
+            >
+          </div>
         </div>
+      </div>
 
-        <!-- Recognition -->
-        <section id="recognition" class="bg-[#0f6da5] text-white py-16 px-4">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Industry Recognition</h2>
-
-                <!-- Flex wrapper to center the grid -->
-                <div class="flex justify-center">
-                    <!-- Grid with fixed width (like max-w) or auto sizing -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl">
-                        <!-- Card -->
-                        <div class="bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col w-full max-w-sm">
-                            <img src="./images/1714547249317.jpeg" alt="Award Badge" class="object-cover w-full h-60">
-                            <div class="p-6 text-black flex-1 flex flex-col">
-                                <h3 class="text-xl font-semibold mb-3">Asian African Chamber of Commerce & Industry</h3>
-                                <p class="text-sm leading-relaxed flex-grow">
-                                    Our efforts were recognized with the award for <span class="italic">"Socially
-                                        Responsible Trust in Education and Social Sector"</span> on <strong>10th Feb
-                                        2024</strong> at <strong>Mumbai, India</strong>.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Add more cards if needed -->
-
-
-
-
-                    </div>
-                </div>
+      <!-- Updates -->
+      <div
+        id="updates"
+        class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10"
+        style="background-color: #d6b022"
+      >
+        <div class="max-w-6xl mx-auto">
+          <h3
+            class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center text-white mb-8 md:mb-12"
+          >
+            Latest Updates
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+            <!-- Update Card 1 -->
+            <div
+              class="bg-white rounded-2xl shadow p-6 md:p-8 flex flex-col items-center"
+            >
+              <img
+                src="https://img.icons8.com/color/96/news.png"
+                alt="Update 1"
+                class="mb-4 rounded-xl"
+              />
+              <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">
+                Workshop Completed
+              </h4>
+              <p class="text-gray-700 mb-4 text-center text-sm md:text-base">
+                Successfully conducted a financial literacy workshop for 100+
+                women in Navi Mumbai.
+              </p>
             </div>
-        </section>
-
-
-
-
-
-        <!-- Volunteer -->
-        <div id="volunteer" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10">
-            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                <div class="w-full md:w-1/2">
-                    <img src="./images/1718019586390.jpeg" alt="Volunteer"
-                        class="rounded-xl shadow-md w-full h-52 sm:h-64 md:h-80 object-cover">
-                </div>
-                <div class="w-full md:w-1/2 text-center md:text-left">
-                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 md:mb-6">Become a Volunteer or Intern
-                    </h3>
-                    <p class="text-gray-700 mb-6 md:mb-8 leading-relaxed text-sm md:text-base">Join our mission to drive
-                        social change through skill,
-                        compassion, and collaboration.</p>
-                    <a href="./volunteer.html"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-xl font-medium">Apply
-                        Now →</a>
-                </div>
+            <!-- Update Card 2 -->
+            <div
+              class="bg-white rounded-2xl shadow p-6 md:p-8 flex flex-col items-center"
+            >
+              <img
+                src="https://img.icons8.com/color/96/conference.png"
+                alt="Update 2"
+                class="mb-4 rounded-xl"
+              />
+              <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">
+                Partnership
+              </h4>
+              <p class="text-gray-700 mb-4 text-center text-sm md:text-base">
+                we have successfully conducted education, training, social and
+                Entrepreneurship projects in Partnerships with government,
+                individuals and organizational stakeholders.
+              </p>
             </div>
+            <!-- Update Card 3 -->
+            <div
+              class="bg-white rounded-2xl shadow p-6 md:p-8 flex flex-col items-center"
+            >
+              <img
+                src="https://img.icons8.com/color/96/megaphone.png"
+                alt="Update 3"
+                class="mb-4 rounded-xl"
+              />
+              <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">
+                Volunteer Drive
+              </h4>
+              <p class="text-gray-700 mb-4 text-center text-sm md:text-base">
+                Launched a new volunteer drive—join us to make a difference in
+                your community!
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center mt-8 md:mt-12">
+            <a
+              href="./updates.html"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-xl font-medium transition"
+            >
+              Know More →
+            </a>
+          </div>
         </div>
+      </div>
 
-        <!-- Updates -->
-        <div id="updates" class="py-12 sm:py-16 md:py-24 px-2 sm:px-6 md:px-10" style="background-color: #d6b022;">
-            <div class="max-w-6xl mx-auto">
-                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center text-white mb-8 md:mb-12">Latest
-                    Updates</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-                    <!-- Update Card 1 -->
-                    <div class="bg-white rounded-2xl shadow p-6 md:p-8 flex flex-col items-center">
-                        <img src="https://img.icons8.com/color/96/news.png" alt="Update 1" class="mb-4 rounded-xl">
-                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">Workshop Completed</h4>
-                        <p class="text-gray-700 mb-4 text-center text-sm md:text-base">
-                            Successfully conducted a financial literacy workshop for 100+ women in Navi Mumbai.
-                        </p>
-                        <span class="text-xs text-gray-400">March 2024</span>
-                    </div>
-                    <!-- Update Card 2 -->
-                    <div class="bg-white rounded-2xl shadow p-6 md:p-8 flex flex-col items-center">
-                        <img src="https://img.icons8.com/color/96/conference.png" alt="Update 2"
-                            class="mb-4 rounded-xl">
-                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">New Partnership</h4>
-                        <p class="text-gray-700 mb-4 text-center text-sm md:text-base">
-                            Partnered with XYZ Foundation to expand our skill development programs.
-                        </p>
-                        <span class="text-xs text-gray-400">February 2024</span>
-                    </div>
-                    <!-- Update Card 3 -->
-                    <div class="bg-white rounded-2xl shadow p-6 md:p-8 flex flex-col items-center">
-                        <img src="https://img.icons8.com/color/96/megaphone.png" alt="Update 3" class="mb-4 rounded-xl">
-                        <h4 class="text-lg md:text-xl font-semibold mb-2 text-blue-700">Volunteer Drive</h4>
-                        <p class="text-gray-700 mb-4 text-center text-sm md:text-base">
-                            Launched a new volunteer drive—join us to make a difference in your community!
-                        </p>
-                        <span class="text-xs text-gray-400">January 2024</span>
-                    </div>
-                </div>
-                <div class="flex justify-center mt-8 md:mt-12">
-                    <a href="./updates.html"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-8 py-3 rounded-xl font-medium transition">
-                        Know More →
-                    </a>
-                </div>
+      <!-- Include this in your global CSS (e.g. styles.css) -->
+      <style>
+        @layer utilities {
+          .no-scrollbar::-webkit-scrollbar {
+            display: none;
+          }
+
+          /* Chrome, Safari, Opera */
+          .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+
+          /* IE, Edge, Firefox */
+        }
+      </style>
+
+      <!-- 2. Carousel Component -->
+      <div class="relative w-full mx-auto overflow-hidden mt-10 mb-10">
+        <div id="carousel-container" class="relative">
+          <div
+            id="carousel"
+            class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar"
+            style="scroll-padding: 0 20%"
+          >
+            <!-- Slide 1 -->
+            <div class="snap-center flex-shrink-0 w-[60%] md:w-[40%] px-2">
+              <div
+                class="bg-indigo-50 rounded-2xl h-96 flex items-center justify-center"
+              >
+                <img
+                  src="./images/1688114632960.jpeg"
+                  alt="Slide 1"
+                  class="object-fit w-full h-full"
+                />
+              </div>
             </div>
-        </div>
-
-        <!-- Include this in your global CSS (e.g. styles.css) -->
-        <style>
-            @layer utilities {
-                .no-scrollbar::-webkit-scrollbar {
-                    display: none;
-                }
-
-                /* Chrome, Safari, Opera */
-                .no-scrollbar {
-                    -ms-overflow-style: none;
-                    scrollbar-width: none;
-                }
-
-                /* IE, Edge, Firefox */
-            }
-        </style>
-
-        <!-- 2. Carousel Component -->
-        <div class="relative w-full mx-auto overflow-hidden mt-10 mb-10">
-            <div id="carousel-container" class="relative">
-                <div id="carousel" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar"
-                    style="scroll-padding: 0 20%;">
-                    <!-- Slide 1 -->
-                    <div class="snap-center flex-shrink-0 w-[60%] md:w-[40%] px-2">
-                        <div class="bg-indigo-50 rounded-2xl h-96 flex items-center justify-center">
-                            <span class="text-3xl font-semibold text-indigo-600">Slide 1</span>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="snap-center flex-shrink-0 w-[60%] md:w-[40%] px-2">
-                        <div class="bg-indigo-50 rounded-2xl h-96 flex items-center justify-center">
-                            <span class="text-3xl font-semibold text-indigo-600">Slide 2</span>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="snap-center flex-shrink-0 w-[60%] md:w-[40%] px-2">
-                        <div class="bg-indigo-50 rounded-2xl h-96 flex items-center justify-center">
-                            <span class="text-3xl font-semibold text-indigo-600">Slide 3</span>
-                        </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="snap-center flex-shrink-0 w-[60%] md:w-[40%] px-2">
-                        <div class="bg-indigo-50 rounded-2xl h-96 flex items-center justify-center">
-                            <span class="text-3xl font-semibold text-indigo-600">Slide 4</span>
-                        </div>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="snap-center flex-shrink-0 w-[60%] md:w-[40%] px-2">
-                        <div class="bg-indigo-50 rounded-2xl h-96 flex items-center justify-center">
-                            <span class="text-3xl font-semibold text-indigo-600">Slide 5</span>
-                        </div>
-                    </div>
-                    <!-- Slide 6 -->
-                    <div class="snap-center flex-shrink-0 w-[60%] md:w-[40%] px-2">
-                        <div class="bg-indigo-50 rounded-2xl h-96 flex items-center justify-center">
-                            <span class="text-3xl font-semibold text-indigo-600">Slide 6</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navigation Buttons -->
-                <button id="prev"
-                    class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow-lg">‹</button>
-                <button id="next"
-                    class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow-lg">›</button>
-
-                <!-- Pagination Dots -->
-                <div id="dots" class="flex justify-center space-x-2 mt-4"></div>
-
-                <!-- Embedded Carousel Script -->
-                <script>
-                    (function () {
-                        const carousel = document.getElementById('carousel');
-                        const slides = Array.from(carousel.children);
-                        const dots = document.getElementById('dots');
-                        let idx = 0;
-
-                        // Create pagination dots
-                        slides.forEach((_, i) => {
-                            const btn = document.createElement('button');
-                            btn.className = 'w-3 h-3 rounded-full bg-gray-400';
-                            btn.addEventListener('click', () => goTo(i));
-                            dots.appendChild(btn);
-                        });
-
-                        document.getElementById('prev').onclick = () => goTo(idx - 1);
-                        document.getElementById('next').onclick = () => goTo(idx + 1);
-
-                        function goTo(i) {
-                            idx = (i + slides.length) % slides.length;
-                            slides[idx].scrollIntoView({ behavior: 'smooth', inline: 'center' });
-                            updateDots();
-                        }
-
-                        function updateDots() {
-                            dots.querySelectorAll('button').forEach((b, i) => {
-                                b.classList.toggle('bg-indigo-600', i === idx);
-                                b.classList.toggle('bg-gray-400', i !== idx);
-                            });
-                        }
-
-                        // On load: DO NOT auto-scroll
-                        updateDots();
-                    })();
-                </script>
+            <!-- Slide 2 -->
+            <div class="snap-center flex-shrink-0 w-[60%] md:w-[40%] px-2">
+              <div
+                class="bg-indigo-50 rounded-2xl h-96 flex items-center justify-center"
+              >
+                <img
+                  src="./images/1660.png"
+                  alt="Slide 2"
+                  class="object-contain w-full h-full"
+                />
+              </div>
             </div>
-        </div>
-
-
-
-
-        <!-- Founding Members -->
-        <div id="founders" class="py-14 sm:py-18 md:py-24 px-4 sm:px-8 md:px-16 bg-[#0f6da5]">
-            <div class="max-w-6xl mx-auto text-center">
-                <h3 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-12 text-white">Founding Members</h3>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-                    <!-- Member 1 -->
-                    <div class="flex flex-col items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-300">
-                        <img src="./images/member1.png" alt="Prof. Dr. Shilpi Agarwal"
-                            class="w-44 h-44 sm:w-52 sm:h-52 rounded-full mb-4 border-4 border-blue-300 object-cover shadow-md" />
-                        <h4 class="text-xl sm:text-2xl font-semibold text-blue-700 mb-1">Prof. Dr. Shilpi Agarwal</h4>
-                        <p class="text-gray-700 text-sm sm:text-base">Chief Trustee, AMISHI TRUST</p>
-                    </div>
-
-                    <!-- Member 2 -->
-                    <div class="flex flex-col items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-300">
-                        <img src="./images/member2.png" alt="Prof. Dr. Amit Aggrawal"
-                            class="w-44 h-44 sm:w-52 sm:h-52 rounded-full mb-4 border-4 border-blue-300 object-cover shadow-md" />
-                        <h4 class="text-xl sm:text-2xl font-semibold text-blue-700 mb-1">Prof. Dr. Amit Aggrawal</h4>
-                        <p class="text-gray-700 text-sm sm:text-base">Managing Trustee, AMISHI TRUST</p>
-                    </div>
-                </div>
+            <!-- Slide 3 -->
+            <div class="snap-center flex-shrink-0 w-[60%] md:w-[40%] px-2">
+              <div
+                class="bg-indigo-50 rounded-2xl h-96 flex items-center justify-center"
+              >
+                <img
+                  src="./images/1661.jpeg"
+                  alt="Slide 3"
+                  class="object-contain w-full h-full"
+                />
+              </div>
             </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button
+            id="prev"
+            class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow-lg"
+          >
+            ‹
+          </button>
+          <button
+            id="next"
+            class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/70 p-2 rounded-full shadow-lg"
+          >
+            ›
+          </button>
+
+          <!-- Pagination Dots -->
+          <div id="dots" class="flex justify-center space-x-2 mt-4"></div>
+
+          <!-- Embedded Carousel Script -->
+          <script>
+            (function () {
+              const carousel = document.getElementById("carousel");
+              const slides = Array.from(carousel.children);
+              const dots = document.getElementById("dots");
+              let idx = 0;
+
+              // Create pagination dots
+              slides.forEach((_, i) => {
+                const btn = document.createElement("button");
+                btn.className = "w-3 h-3 rounded-full bg-gray-400";
+                btn.addEventListener("click", () => goTo(i));
+                dots.appendChild(btn);
+              });
+
+              document.getElementById("prev").onclick = () => goTo(idx - 1);
+              document.getElementById("next").onclick = () => goTo(idx + 1);
+
+              function goTo(i) {
+                idx = (i + slides.length) % slides.length;
+                slides[idx].scrollIntoView({
+                  behavior: "smooth",
+                  inline: "center",
+                });
+                updateDots();
+              }
+
+              function updateDots() {
+                dots.querySelectorAll("button").forEach((b, i) => {
+                  b.classList.toggle("bg-indigo-600", i === idx);
+                  b.classList.toggle("bg-gray-400", i !== idx);
+                });
+              }
+
+              // On load: DO NOT auto-scroll
+              updateDots();
+            })();
+          </script>
         </div>
+      </div>
 
+      <!-- Founding Members -->
+      <div
+        id="founders"
+        class="py-14 sm:py-18 md:py-24 px-4 sm:px-8 md:px-16 bg-[#0f6da5]"
+      >
+        <div class="max-w-6xl mx-auto text-center">
+          <h3
+            class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-12 text-white"
+          >
+            Founding Members
+          </h3>
 
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+            <!-- Member 1 -->
+            <div
+              class="flex flex-col items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-300"
+            >
+              <img
+                src="./images/member1.png"
+                alt="Prof. Dr. Shilpi Agarwal"
+                class="w-44 h-44 sm:w-52 sm:h-52 rounded-full mb-4 border-4 border-blue-300 object-cover shadow-md"
+              />
+              <h4 class="text-xl sm:text-2xl font-semibold text-blue-700 mb-1">
+                Prof. Dr. Shilpi Agarwal
+              </h4>
+              <p class="text-gray-700 text-sm sm:text-base">
+                Chief Trustee, AMISHI TRUST
+              </p>
+            </div>
 
-
+            <!-- Member 2 -->
+            <div
+              class="flex flex-col items-center bg-white p-8 rounded-3xl shadow-lg border border-gray-300"
+            >
+              <img
+                src="./images/member2.png"
+                alt="Prof. Dr. Amit Aggrawal"
+                class="w-44 h-44 sm:w-52 sm:h-52 rounded-full mb-4 border-4 border-blue-300 object-cover shadow-md"
+              />
+              <h4 class="text-xl sm:text-2xl font-semibold text-blue-700 mb-1">
+                Prof. Dr. Amit Aggrawal
+              </h4>
+              <p class="text-gray-700 text-sm sm:text-base">
+                Managing Trustee, AMISHI TRUST
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Contact -->
     <div id="contact" class="py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-10">
-        <div class="max-w-6xl mx-auto gap-8 md:gap-10 flex flex-col items-center">
+      <div class="max-w-6xl mx-auto gap-8 md:gap-10 flex flex-col items-center">
+        <!-- Contact Info -->
+        <div class="space-y-6 flex flex-col items-center">
+          <h3 class="text-2xl sm:text-3xl font-semibold mb-4 text-black">
+            What to contact us
+          </h3>
 
-            <!-- Contact Info -->
-            <div class="space-y-6 flex flex-col items-center">
-                <h3 class="text-2xl sm:text-3xl font-semibold mb-4 text-black">What to contact us</h3>
-
-                <!-- Contact Us Button with Redirection Arrow -->
-                <a href="./Contact.html"
-                    class="inline-block bg-[#be7705] hover:bg-[#a66204] text-white font-semibold py-3 px-6 rounded-lg transition flex items-center justify-between">
-                    <!-- SVG Right Arrow -->
-                    Contact Us
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </a>
-
-
-            </div>
-
-
-
+          <!-- Contact Us Button with Redirection Arrow -->
+          <a
+            href="./Contact.html"
+            class="inline-block bg-[#be7705] hover:bg-[#a66204] text-white font-semibold py-3 px-6 rounded-lg transition flex items-center justify-between"
+          >
+            <!-- SVG Right Arrow -->
+            Contact Us
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
         </div>
+      </div>
     </div>
 
-
     <!-- Footer -->
-    <footer class="w-full py-8 md:py-10 text-center text-xs sm:text-sm text-gray-600 bg-white">
-        © 2025 AMISHI TRUST. All rights reserved.
+    <footer
+      class="w-full py-8 md:py-10 text-center text-xs sm:text-sm text-gray-600 bg-white"
+    >
+      © 2025 AMISHI TRUST. All rights reserved.
     </footer>
-</body>
-
+  </body>
 </html>
